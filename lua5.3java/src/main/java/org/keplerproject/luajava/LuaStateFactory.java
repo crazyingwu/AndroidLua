@@ -38,22 +38,21 @@ import java.util.List;
  */
 public final class LuaStateFactory {
 
-	private final static String LUAJAVA_LIB = "luajava";
-	private final static boolean isLuaLibLoaded;
+	private final static boolean isLuaLibLoaded = true;
 
 	/**
 	 * Opens the library containing the luajava API
 	 */
-	static {
-		boolean loaded = false;
-		try {
-			System.loadLibrary(LUAJAVA_LIB);
-			loaded = true;
-		} catch (UnsatisfiedLinkError e) {
-			e.printStackTrace();
-		}
-		isLuaLibLoaded = loaded;
-	}
+//	static {
+//		boolean loaded = false;
+//		try {
+//			System.loadLibrary(LUAJAVA_LIB);
+//			loaded = true;
+//		} catch (UnsatisfiedLinkError e) {
+//			e.printStackTrace();
+//		}
+//		isLuaLibLoaded = loaded;
+//	}
 
 	/**
 	 * Array with all luaState's instances

@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 29
     buildToolsVersion "26.0.2"
 
     defaultConfig {
         applicationId "sk.kottman.androlua"
-        minSdkVersion 18
-        targetSdkVersion 4
+        minSdkVersion 22
+        targetSdkVersion 29
 //
 //        externalNativeBuild {
 //            cmake {
@@ -27,8 +27,20 @@ android {
 //            path "CMakeLists.txt"
 //        }
 //    }
+
+    compileOptions {
+        // This library uses Java 8 features, this is required
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation project(':lua5.3java')
+    implementation "com.github.topjohnwu.libsu:core:5.0.2"
+    implementation "com.github.topjohnwu.libsu:service:5.0.2"
 }

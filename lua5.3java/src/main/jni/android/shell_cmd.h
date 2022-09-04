@@ -9,6 +9,7 @@
 #define CMD_RUN_APP  "am start "
 #define CMD_FORCE_STOP "am force-stop"
 #define USER  "--user 0"
+#define PERMISSIONS_PROMOTE  "chmod 777 "
 #define contact(x, y) x##y
 
 int press_home();

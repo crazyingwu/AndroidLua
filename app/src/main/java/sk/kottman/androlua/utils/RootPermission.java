@@ -1,5 +1,7 @@
 package sk.kottman.androlua.utils;
 
+import android.util.Log;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -13,6 +15,7 @@ public class RootPermission {
             if(process == null)
                 process = Runtime.getRuntime().exec("su");
             if (command != null && command.length > 0) {
+                Log.d("rootTag", "rootPermission: success");
                 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
                         process.getOutputStream()));
                 for (int i = 0; i < command.length; i++) {

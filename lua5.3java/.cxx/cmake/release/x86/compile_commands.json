@@ -1,0 +1,235 @@
+[
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dluajava_EXPORTS -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\luajava.dir\\src\\main\\jni\\luajava\\luajava.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\luajava\\luajava.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/luajava/luajava.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lapi.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lapi.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lapi.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lauxlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lauxlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lauxlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lbaselib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lbaselib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lbaselib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lbitlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lbitlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lbitlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lcode.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lcode.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lcode.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lcorolib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lcorolib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lcorolib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lctype.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lctype.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lctype.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ldblib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ldblib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ldblib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ldebug.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ldebug.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ldebug.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ldo.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ldo.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ldo.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ldump.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ldump.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ldump.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lfunc.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lfunc.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lfunc.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lgc.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lgc.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lgc.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\linit.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\linit.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/linit.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\liolib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\liolib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/liolib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\llex.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\llex.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/llex.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lmathlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lmathlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lmathlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lmem.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lmem.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lmem.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\loadlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\loadlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/loadlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lobject.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lobject.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lobject.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lopcodes.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lopcodes.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lopcodes.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\loslib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\loslib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/loslib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lparser.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lparser.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lparser.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lstate.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lstate.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lstate.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lstring.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lstring.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lstring.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lstrlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lstrlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lstrlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ltable.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ltable.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ltable.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ltablib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ltablib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ltablib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\ltm.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\ltm.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/ltm.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lundump.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lundump.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lundump.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lutf8lib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lutf8lib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lutf8lib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lvm.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lvm.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lvm.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\lua\\lzio.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\lua\\lzio.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua/lzio.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\android\\androidlib.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\android\\androidlib.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/android/androidlib.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\android\\input_event.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\android\\input_event.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/android/input_event.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\android\\memory.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\android\\memory.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/android/memory.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\android\\shell_cmd.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\android\\shell_cmd.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/android/shell_cmd.c"
+},
+
+{
+  "directory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86",
+  "command": "F:\\AndroidSDK\\ndk\\android-ndk-r19c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android18 --gcc-toolchain=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -I../../../../src/main/jni/lua  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\lua.dir\\src\\main\\jni\\android\\event_test.c.o   -c D:\\Code\\Android\\AndroidLua\\lua5.3java\\src\\main\\jni\\android\\event_test.c",
+  "file": "D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/android/event_test.c"
+}
+]

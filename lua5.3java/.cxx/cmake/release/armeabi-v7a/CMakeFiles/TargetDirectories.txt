@@ -1,0 +1,4 @@
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/armeabi-v7a/CMakeFiles/luajava.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/armeabi-v7a/CMakeFiles/lua.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir

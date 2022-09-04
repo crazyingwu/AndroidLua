@@ -1,0 +1,142 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "D:/Code/Android/AndroidLua/lua5.3java",
+  "buildDirectory": "D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86_64",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DCMAKE_FIND_ROOT_PATH\u003dD:\\Code\\Android\\AndroidLua\\lua5.3java\\.cxx\\cmake\\release\\prefab\\x86_64\\prefab",
+    "-DCMAKE_BUILD_TYPE\u003dRelease",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dF:\\AndroidSDK\\ndk\\android-ndk-r19c\\build\\cmake\\android.toolchain.cmake",
+    "-DANDROID_ABI\u003dx86_64",
+    "-DANDROID_NDK\u003dF:\\AndroidSDK\\ndk\\android-ndk-r19c",
+    "-DANDROID_PLATFORM\u003dandroid-18",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64",
+    "-DCMAKE_ANDROID_NDK\u003dF:\\AndroidSDK\\ndk\\android-ndk-r19c",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\Code\\Android\\AndroidLua\\lua5.3java\\build\\intermediates\\cmake\\release\\obj\\x86_64",
+    "-DCMAKE_MAKE_PROGRAM\u003dF:\\AndroidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d18"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","F:/AndroidSDK/ndk/android-ndk-r19c/build/cmake/android.toolchain.cmake","F:/AndroidSDK/ndk/android-ndk-r19c/build/cmake/platforms.cmake"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/release/x86_64/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"F:/AndroidSDK/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"D:/Code/Android/AndroidLua/lua5.3java","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Release","projects":[{"buildDirectory":"D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86_64","name":"Project","sourceDirectory":"D:/Code/Android/AndroidLua/lua5.3java","targets":[{"artifacts":["D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86_64/liblua.a"],"buildDirectory":"D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86_64","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC  ","includePath":[{"path":"D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua"}],"isGenerated":false,"language":"C","sources":["src/main/jni/lua/lapi.c","src/main/jni/lua/lauxlib.c","src/main/jni/lua/lbaselib.c","src/main/jni/lua/lbitlib.c","src/main/jni/lua/lcode.c","src/main/jni/lua/lcorolib.c","src/main/jni/lua/lctype.c","src/main/jni/lua/ldblib.c","src/main/jni/lua/ldebug.c","src/main/jni/lua/ldo.c","src/main/jni/lua/ldump.c","src/main/jni/lua/lfunc.c","src/main/jni/lua/lgc.c","src/main/jni/lua/linit.c","src/main/jni/lua/liolib.c","src/main/jni/lua/llex.c","src/main/jni/lua/lmathlib.c","src/main/jni/lua/lmem.c","src/main/jni/lua/loadlib.c","src/main/jni/lua/lobject.c","src/main/jni/lua/lopcodes.c","src/main/jni/lua/loslib.c","src/main/jni/lua/lparser.c","src/main/jni/lua/lstate.c","src/main/jni/lua/lstring.c","src/main/jni/lua/lstrlib.c","src/main/jni/lua/ltable.c","src/main/jni/lua/ltablib.c","src/main/jni/lua/ltm.c","src/main/jni/lua/lundump.c","src/main/jni/lua/lutf8lib.c","src/main/jni/lua/lvm.c","src/main/jni/lua/lzio.c","src/main/jni/android/androidlib.c","src/main/jni/android/input_event.c","src/main/jni/android/memory.c","src/main/jni/android/shell_cmd.c","src/main/jni/android/event_test.c"]}],"fullName":"liblua.a","linkerLanguage":"C","name":"lua","sourceDirectory":"D:/Code/Android/AndroidLua/lua5.3java","sysroot":"F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"STATIC_LIBRARY"},{"artifacts":["D:/Code/Android/AndroidLua/lua5.3java/build/intermediates/cmake/release/obj/x86_64/libluajava.so"],"buildDirectory":"D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/release/x86_64","fileGroups":[{"compileFlags":"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC  ","defines":["luajava_EXPORTS"],"includePath":[{"path":"D:/Code/Android/AndroidLua/lua5.3java/src/main/jni/lua"}],"isGenerated":false,"language":"C","sources":["src/main/jni/luajava/luajava.c"]}],"fullName":"libluajava.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now","linkLibraries":"liblua.a -llog -latomic -lm","linkerLanguage":"C","name":"luajava","sourceDirectory":"D:/Code/Android/AndroidLua/lua5.3java","sysroot":"F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+

@@ -1,0 +1,4 @@
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/debug/x86/CMakeFiles/luajava.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/debug/x86/CMakeFiles/lua.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+D:/Code/Android/AndroidLua/lua5.3java/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

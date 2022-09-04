@@ -16,25 +16,25 @@ int init_uinput_dev() {
 
     int i = 0;
 
-    int w = 720;
-    int h = 1280;
+    int w = 360;
+    int h = 640;
 
     struct fb_var_screeninfo fb_var;
-    int fd = open(DEV_GRAPHICS, O_RDONLY);
-
-    if (fd < 0) {
-        LOGE("open %s failed", DEV_GRAPHICS);
-    } else {
-        fd = ioctl(fd, FBIOGET_VSCREENINFO, &fb_var);
-        if (fd < 0) {
-            LOGE("ioctl failed");
-            return 2;
-        } else {
-            w = fb_var.xres;
-            h = fb_var.yres;
-        }
-        close(fd);
-    }
+//    int fd = open(DEV_GRAPHICS, O_RDONLY);
+//
+//    if (fd < 0) {
+//        LOGE("open %s failed", DEV_GRAPHICS);
+//    } else {
+//        fd = ioctl(fd, FBIOGET_VSCREENINFO, &fb_var);
+//        if (fd < 0) {
+//            LOGE("ioctl failed");
+//            return 2;
+//        } else {
+//            w = fb_var.xres;
+//            h = fb_var.yres;
+//        }
+//        close(fd);
+//    }
     // Open the input device
     uinput_fd = open(DEV_UINPUT, O_WRONLY | O_NDELAY);
     if (uinput_fd < 0) {
@@ -44,17 +44,32 @@ int init_uinput_dev() {
 
     memset(&uinp, 0, sizeof(uinp)); // Intialize the uInput device to NULL
     strncpy(uinp.name, "AutomaticKey Dev", UINPUT_MAX_NAME_SIZE);
-    uinp.id.version = 1;
+/*    uinp.id.version = 1;
     uinp.id.bustype = BUS_VIRTUAL;
     uinp.absmin[ABS_X] = 0;
     uinp.absmax[ABS_X] = w;
     uinp.absmin[ABS_Y] = 0;
     uinp.absmax[ABS_Y] = h;
     uinp.absmin[ABS_MT_POSITION_X] = 0;
-    uinp.absmax[ABS_MT_POSITION_X] = fb_var.xres;
+    uinp.absmax[ABS_MT_POSITION_X] = w;
     uinp.absmin[ABS_MT_POSITION_Y] = 0;
-    uinp.absmax[ABS_MT_POSITION_Y] = fb_var.yres;
-    uinp.absmax[ABS_MT_SLOT] = 9;
+    uinp.absmax[ABS_MT_POSITION_Y] = h;
+    uinp.absmax[ABS_MT_SLOT] = 9;*/
+
+    uinp.id.version = 4;
+    uinp.id.bustype = BUS_USB;
+    uinp.absmin[ABS_MT_SLOT] = 0;
+    uinp.absmax[ABS_MT_SLOT] = 9; // track up to 9 fingers
+    uinp.absmin[ABS_MT_TOUCH_MAJOR] = 0;
+    uinp.absmax[ABS_MT_TOUCH_MAJOR] = 15;
+    uinp.absmin[ABS_MT_POSITION_X] = 0; // screen dimension
+    uinp.absmax[ABS_MT_POSITION_X] = 1079; // screen dimension
+    uinp.absmin[ABS_MT_POSITION_Y] = 0; // screen dimension
+    uinp.absmax[ABS_MT_POSITION_Y] = 1919; // screen dimension
+    uinp.absmin[ABS_MT_TRACKING_ID] = 0;
+    uinp.absmax[ABS_MT_TRACKING_ID] = 65535;
+    uinp.absmin[ABS_MT_PRESSURE] = 0;
+    uinp.absmax[ABS_MT_PRESSURE] = 255;
 
     // Setup the uinput device
     int ret = ioctl(uinput_fd, UI_SET_EVBIT, EV_ABS);

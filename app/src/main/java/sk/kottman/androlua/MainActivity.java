@@ -1,21 +1,25 @@
 package sk.kottman.androlua;
 
 import android.app.Activity;
-import android.content.res.Resources;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Process;
+import android.os.RemoteException;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.topjohnwu.superuser.ipc.RootService;
+
+import org.keplerproject.luajava.engine.EngineConnection;
+import org.keplerproject.luajava.IEngineService;
 import org.keplerproject.luajava.LuaException;
 import org.keplerproject.luajava.LuaState;
 import org.keplerproject.luajava.LuaStateFactory;
+import org.keplerproject.luajava.engine.EngineBootstrapService;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -23,10 +27,13 @@ import sk.kottman.androlua.utils.RootPermission;
 
 /**
  * lua5.3之前实现位运算：http://lua-users.org/wiki/BitwiseOperators
- *https://github.com/mkottman/AndroLua
- *https://github.com/vimfung/LuaScriptCore一个更新的方案，同时支持android，ios
+ * https://github.com/mkottman/AndroLua
+ * https://github.com/vimfung/LuaScriptCore一个更新的方案，同时支持android，ios
  */
 public class MainActivity extends Activity {
+
+    private final String TAG = "main_activity";
+
 
     private LuaState mLuaState;//Lua解析和执行由此对象完成
 
@@ -48,19 +55,20 @@ public class MainActivity extends Activity {
         }
 
         commands[10] = "chmod 777 /dev/uinput" + "\n";
-        commands[11] = "chmod 777 /dev/graphics/fb0" + "\n";
+        commands[11] = "chmod 777 /proc/3432/mem" + "\n";
         RootPermission.rootPermission(commands);
     }
 
+    private EngineConnection engineConnection;
+    private IEngineService engineService;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        displayResult1 = (TextView)findViewById(R.id.displayResult1);
-        displayResult2 = (TextView)findViewById(R.id.displayResult2);
+        displayResult1 = (TextView) findViewById(R.id.displayResult1);
+        displayResult2 = (TextView) findViewById(R.id.displayResult2);
         mLayout = (LinearLayout) findViewById(R.id.layout);
 
         requestDevPermission();
@@ -70,7 +78,10 @@ public class MainActivity extends Activity {
         findViewById(R.id.callAndroidApi).setOnClickListener(listener);
         findViewById(R.id.clearBtn).setOnClickListener(listener);
         findViewById(R.id.executeLuaFile2).setOnClickListener(listener);
-        initLua();
+//        initLua();
+        bootStrapEngineService();
+//        LuaStateFactory.bindService(intent, engineConnection);
+
     }
 
     @Override
@@ -82,10 +93,18 @@ public class MainActivity extends Activity {
         }
     }
 
+
+    private void bootStrapEngineService() {
+        Intent intent = new Intent(this, EngineBootstrapService.class);
+        engineConnection = new EngineConnection();
+        RootService.bind(intent, engineConnection);
+    }
+
+
     /**
      * 只是在第一次调用，如果升级脚本也不需要重复初始化
      */
-    private void initLua(){
+    private void initLua() {
         mLuaState = LuaStateFactory.newLuaState();
         mLuaState.openLibs();
         //为了lua能使用系统日志，传入Log
@@ -100,7 +119,8 @@ public class MainActivity extends Activity {
         }
     }
 
-    private View.OnClickListener listener=new View.OnClickListener() {
+
+    private View.OnClickListener listener = new View.OnClickListener() {
 
         @Override
         public void onClick(View v) {
@@ -111,7 +131,7 @@ public class MainActivity extends Activity {
                     break;
 
                 case R.id.executeLuaFile:
-                    executeLuaFile();
+                    execLuaFileScript();
                     break;
 
                 case R.id.callAndroidApi:
@@ -130,9 +150,8 @@ public class MainActivity extends Activity {
         }
     };
 
-    private void executeLuaStatemanet()
-    {
-        final String luaStr = "system.init()\n" +
+    private void executeLuaStatemanet() {
+/*        final String luaStr = "system.init()\n" +
                 "print(os.time())\n" +
                 "system.sleep(1000)\n" +
                 "print(os.time())\n" +
@@ -169,14 +188,25 @@ public class MainActivity extends Activity {
                 "system.touchScroll(300, 350)\n" +
                 "system.sleep(10)\n" +
                 "system.touchUp(300, 465)\n" +
-                "system.close()\n";// 定义一个Lua变量
+                "system.close()\n";// 定义一个Lua变量*/
+        final String luaStr = "print(os.time())\n" +
+                "system.memoryRead()";
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
+/*                try {
                     String res = evalLua(luaStr);
                 } catch (LuaException e) {
+                    e.printStackTrace();
+                }*/
+//                engineConnection.onServiceConnected();
+                try {
+//                    engineConnection.getEngineService().eval(luaStr);
+                    Log.d(TAG, "run: " + engineConnection.getEngineService().eval(luaStr));
+                    Log.d(TAG, "activity pid: " + Process.myPid());
+                    Log.d(TAG, "service pid: " + engineConnection.getEngineService().getPid());
+                } catch (RemoteException e) {
                     e.printStackTrace();
                 }
             }
@@ -204,8 +234,21 @@ public class MainActivity extends Activity {
         throw new LuaException(errorReason(ok) + ": " + mLuaState.toString(-1));
     }
 
-    private void executeLuaFile()
-    {
+
+    private void execLuaFileScript() {
+        //载入脚本
+        String luaStr = readStream(getResources().openRawResource(R.raw.luafile));
+        try {
+            Log.d(TAG, "execLuaFileScript: " + engineConnection.getEngineService().evalLuaFile(luaStr));
+
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    private void executeLuaFile() {
         try {
             //载入脚本
             mLuaState.LdoString(readStream(getResources().openRawResource(R.raw.luafile)));
@@ -227,31 +270,31 @@ public class MainActivity extends Activity {
             int retCode = mLuaState.pcall(2, 1, -1);
             String result = mLuaState.toString(-1);
             //retCode=0表示正确调用，否则有异常
-            if (retCode == 0){
-                if (result == null){
+            if (retCode == 0) {
+                if (result == null) {
                     System.out.println("GetVersion return empty value");
-                }else {
-                    System.out.println("GetVersion return value"+result);
+                } else {
+                    System.out.println("GetVersion return value" + result);
                 }
-            }else {
-                System.out.println("error:"+result+" code:"+retCode);
+            } else {
+                System.out.println("error:" + result + " code:" + retCode);
             }
 
             //test error
             mLuaState.getGlobal("testErrorHandler");
             mLuaState.call(0, 0);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void reloadLuaFile(){
+    private void reloadLuaFile() {
         //realse
-        if (isReload){
+        if (isReload) {
             isReload = false;
 //            initLua();//不需要重复初始化，只需要重新载入脚本就可以了
             executeReloadLuaFile(R.raw.luafile1);
-        }else {
+        } else {
             isReload = true;
 //            initLua();
             executeReloadLuaFile(R.raw.luafile);
@@ -259,8 +302,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void executeReloadLuaFile(int rawLuaFile)
-    {
+    private void executeReloadLuaFile(int rawLuaFile) {
         try {
             //载入脚本
             mLuaState.LdoString(readStream(getResources().openRawResource(rawLuaFile)));
@@ -271,13 +313,12 @@ public class MainActivity extends Activity {
             mLuaState.pushString("reload lua test");// 将参数压入栈
             mLuaState.call(2, 1);
             displayResult2.setText(mLuaState.toString(-1));// 输出
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private void callAndroidAPI()
-    {
+    private void callAndroidAPI() {
         //读取文件
         mLuaState.LdoString(readStream(getResources().openRawResource(R.raw.luafile)));
         //获取函数
@@ -290,14 +331,14 @@ public class MainActivity extends Activity {
         mLuaState.call(3, 0);
     }
 
-    private void testAlgorithm(){
+    private void testAlgorithm() {
         InputStream is = null;
         try {
             is = getResources().getAssets().open("ObjectAlgorithm.lua");
             int result = mLuaState.LdoString(readStream(is));
-            System.out.println("result:"+result);
+            System.out.println("result:" + result);
 
-            if (result == 0){
+            if (result == 0) {
                 mLuaState.getGlobal("insertData");
                 mLuaState.pushString("1.1");
                 mLuaState.pushString("2.0");
@@ -360,12 +401,12 @@ public class MainActivity extends Activity {
 
                 mLuaState.getGlobal("isDataEnable");
                 mLuaState.call(0, 1);
-                System.out.println("---isDataEnable:"+mLuaState.toString(-1));
+                System.out.println("---isDataEnable:" + mLuaState.toString(-1));
 
                 //获取多个返回数据
                 mLuaState.getGlobal("getResult");
                 mLuaState.call(0, 1);
-                System.out.println("---"+mLuaState.toString(-1));
+                System.out.println("---" + mLuaState.toString(-1));
 //                mLuaState.setField(LuaState.LUA_GLOBALSINDEX, "list");
 //                LuaObject lObj2 = mLuaState.getLuaObject("list");
 //                System.out.println("==="+lObj2.isTable()+" "+lObj2.toString());
@@ -394,13 +435,11 @@ public class MainActivity extends Activity {
     }
 
 
-    private String readStream(InputStream is)
-    {
+    private String readStream(InputStream is) {
         try {
             ByteArrayOutputStream bo = new ByteArrayOutputStream();
             int i = is.read();
-            while (i != -1)
-            {
+            while (i != -1) {
                 bo.write(i);
                 i = is.read();
             }
@@ -412,48 +451,46 @@ public class MainActivity extends Activity {
     }
 
 
-
-
     /**
      * 将/res/raw下面的资源复制到 /data/data/applicaton.package.name/files
      */
-    private void copyResourcesToLocal() {
-        String name, sFileName;
-        InputStream content;
-        R.raw a = new R.raw();
-        java.lang.reflect.Field[] t = R.raw.class.getFields();
-        Resources resources = getResources();
-        for (int i = 0; i < t.length; i++) {
-            FileOutputStream fs = null;
-            try {
-                name = resources.getText(t[i].getInt(a)).toString();
-                sFileName = name.substring(name.lastIndexOf('/') + 1, name
-                        .length());
-                content = getResources().openRawResource(t[i].getInt(a));
-
-                // Copies script to internal memory only if changes were made
-                sFileName = getApplicationContext().getFilesDir() + "/"
-                        + sFileName;
-
-                Log.d("Copy Raw File", "Copying from stream " + sFileName);
-                content.reset();
-                int bytesum = 0;
-                int byteread = 0;
-                fs = new FileOutputStream(sFileName);
-                byte[] buffer = new byte[1024];
-                while ((byteread = content.read(buffer)) != -1) {
-                    bytesum += byteread; // 字节数 文件大小
-                    System.out.println(bytesum);
-                    fs.write(buffer, 0, byteread);
-                }
-                fs.close();
-            } catch (Exception e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-    }
-
+//    private void copyResourcesToLocal() {
+//        String name, sFileName;
+//        InputStream content;
+//        R.raw a = new R.raw();
+//
+//        java.lang.reflect.Field[] t = R.raw.class.getFields();
+//        Resources resources = getResources();
+//        for (int i = 0; i < t.length; i++) {
+//            FileOutputStream fs = null;
+//            try {
+//                name = resources.getText(t[i].getInt(a)).toString();
+//                sFileName = name.substring(name.lastIndexOf('/') + 1, name
+//                        .length());
+//                content = getResources().openRawResource(t[i].getInt(a));
+//
+//                // Copies script to internal memory only if changes were made
+//                sFileName = getApplicationContext().getFilesDir() + "/"
+//                        + sFileName;
+//
+//                Log.d("Copy Raw File", "Copying from stream " + sFileName);
+//                content.reset();
+//                int bytesum = 0;
+//                int byteread = 0;
+//                fs = new FileOutputStream(sFileName);
+//                byte[] buffer = new byte[1024];
+//                while ((byteread = content.read(buffer)) != -1) {
+//                    bytesum += byteread; // 字节数 文件大小
+//                    System.out.println(bytesum);
+//                    fs.write(buffer, 0, byteread);
+//                }
+//                fs.close();
+//            } catch (Exception e) {
+//                // TODO Auto-generated catch block
+//                e.printStackTrace();
+//            }
+//        }
+//    }
     private String errorReason(int error) {
         switch (error) {
             case 4:
@@ -467,4 +504,6 @@ public class MainActivity extends Activity {
         }
         return "Unknown error " + error;
     }
+
+
 }

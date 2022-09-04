@@ -37,3 +37,7 @@ int kill_app(char *packageName){
 
     return system(cmd);
 }
+
+//int permissions_promote(char *file){
+//    int length = sizeof(CMD_) + sizeof(packageName) + sizeof(USER);
+//}

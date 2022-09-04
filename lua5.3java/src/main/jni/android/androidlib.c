@@ -16,6 +16,7 @@
 #include "androidlib.h"
 #include "input_event.h"
 #include "shell_cmd.h"
+#include "memory.h"
 
 
 /*simple sleep*/
@@ -213,6 +214,15 @@ static int system_close(lua_State *L){
     return 0;
 }
 
+static int system_memoryRead(lua_State *L){
+    int pid = lua_tonumber(L, -3); /*获取参数pid*/
+    long address = lua_tonumber(L, -2); /*获取参数address*/
+    int size = lua_tonumber(L, -1); /*获取参数size*/
+    LOGD("pid=%d, address=%ld, size=%d", pid, address, size);
+    memory_read(pid, (void *) address, size);
+    return 0;
+}
+
 static const struct luaL_Reg libs[] = {
         {"getScreenSize", system_getScreenSize},
         {"runApp",        system_runApp},
@@ -232,6 +242,7 @@ static const struct luaL_Reg libs[] = {
         {"touchScroll",   system_touchScroll},
         {"touchDown",     system_touchDown},
         {"close",         system_close},
+        {"memoryRead",    system_memoryRead},
         {NULL, NULL}  /*the end*/
 };
 
