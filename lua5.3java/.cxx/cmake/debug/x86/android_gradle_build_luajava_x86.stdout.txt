@@ -1,17 +1,30 @@
 ninja: Entering directory `D:\Code\Android\AndroidLua\lua5.3java\.cxx\cmake\debug\x86'
-[1/3] Building C object CMakeFiles/lua.dir/src/main/jni/android/memory.c.o
+[1/4] Building C object CMakeFiles/lua.dir/src/main/jni/android/androidlib.c.o
+../../../../src/main/jni/android/androidlib.c:124:29: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    int result = input_text(text);
+                            ^~~~
+../../../../src/main/jni/android/shell_cmd.h:17:22: note: passing argument to parameter 'content' here
+int input_text(char *content);
+                     ^
+../../../../src/main/jni/android/androidlib.c:162:26: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    int result = run_app(action);
+                         ^~~~~~
+../../../../src/main/jni/android/shell_cmd.h:19:19: note: passing argument to parameter 'package_name' here
+int run_app(char *package_name);
+                  ^
+../../../../src/main/jni/android/androidlib.c:172:27: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    int result = kill_app(packageName);
+                          ^~~~~~~~~~~
+../../../../src/main/jni/android/shell_cmd.h:21:20: note: passing argument to parameter 'package_name' here
+int kill_app(char *package_name);
+                   ^
+3 warnings generated.
+[2/4] Building C object CMakeFiles/lua.dir/src/main/jni/android/memory.c.o
 ../../../../src/main/jni/android/memory.c:24:46: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned int)' [-Wimplicit-function-declaration]
     unsigned char *buffer = (unsigned char *)malloc(size);
                                              ^
 ../../../../src/main/jni/android/memory.c:24:46: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-../../../../src/main/jni/android/memory.c:32:53: warning: format specifies type 'int' but the argument has type 'unsigned char *' [-Wformat]
-    LOGD("ReadProcessMemory success, data is %d\n", buffer);
-                                             ~~     ^~~~~~
-                                             %s
-../../../../src/main/jni/android/androidlib.h:14:62: note: expanded from macro 'LOGD'
-#define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS__) // <U+5B9A><U+4E49>LOGD<U+7C7B><U+578B>
-                                                             ^~~~~~~~~~~
-../../../../src/main/jni/android/memory.c:74:50: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'void *' [-Wint-conversion]
+../../../../src/main/jni/android/memory.c:103:50: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'void *' [-Wint-conversion]
                 safe_ptrace(PTRACE_CONT, pid, 0, WSTOPSIG(status));
                                                  ^~~~~~~~~~~~~~~~
 F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\bits/wait.h:39:24: note: expanded from macro 'WSTOPSIG'
@@ -20,21 +33,21 @@ F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysro
 F:/AndroidSDK/ndk/android-ndk-r19c/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include\bits/wait.h:36:24: note: expanded from macro 'WEXITSTATUS'
 #define WEXITSTATUS(s) (((s) & 0xff00) >> 8)
                        ^~~~~~~~~~~~~~~~~~~~~
-../../../../src/main/jni/android/memory.c:37:67: note: passing argument to parameter 'data' here
+../../../../src/main/jni/android/memory.c:66:67: note: passing argument to parameter 'data' here
 uintptr_t safe_ptrace(int request, pid_t pid, void * addr, void * data)
                                                                   ^
-../../../../src/main/jni/android/memory.c:241:28: warning: incompatible integer to pointer conversion passing 'unsigned long' to parameter of type 'void *' [-Wint-conversion]
+../../../../src/main/jni/android/memory.c:270:28: warning: incompatible integer to pointer conversion passing 'unsigned long' to parameter of type 'void *' [-Wint-conversion]
     ReadProcessMemory(pid, lpAddress, buffer, size);
                            ^~~~~~~~~
-../../../../src/main/jni/android/memory.c:205:38: note: passing argument to parameter 'lpAddress' here
+../../../../src/main/jni/android/memory.c:234:38: note: passing argument to parameter 'lpAddress' here
 int ReadProcessMemory(int pid, void *lpAddress, void *buffer, int size)
                                      ^
-../../../../src/main/jni/android/memory.c:264:5: warning: implicit declaration of function 'read_proc_dir' is invalid in C99 [-Wimplicit-function-declaration]
+../../../../src/main/jni/android/memory.c:293:5: warning: implicit declaration of function 'read_proc_dir' is invalid in C99 [-Wimplicit-function-declaration]
     read_proc_dir("/proc");
     ^
-../../../../src/main/jni/android/memory.c:303:1: warning: control may reach end of non-void function [-Wreturn-type]
+../../../../src/main/jni/android/memory.c:332:1: warning: control may reach end of non-void function [-Wreturn-type]
 }
 ^
-6 warnings generated.
-[2/3] Linking C static library liblua.a
-[3/3] Linking C shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libluajava.so
+5 warnings generated.
+[3/4] Linking C static library liblua.a
+[4/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libluajava.so

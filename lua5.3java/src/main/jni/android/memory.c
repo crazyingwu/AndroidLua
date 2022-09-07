@@ -29,10 +29,39 @@ int memory_read(int pid, void *lpAddress, int size)
         return -1;
     }
     close(fd);
-    LOGD("ReadProcessMemory success, data is %d\n", buffer);
-    LOGD("2");
+//    LOGD("ReadProcessMemory success, data is %d\n", buffer);
+    long result = 0;
+    for (int i = 0; i<size; i++) {
+//        LOGD("buffer[%d] is %d\n", i, buffer[i]);
+        result += buffer[i] << i * 8;
+    }
+    LOGD("data is %ld\n", result);
     return *buffer;
 }
+
+int memory_write(int pid, void *lpAddress, int size, long data)
+{
+    char processpath[100];
+    sprintf(processpath, "/proc/%d/mem", pid);
+    LOGD("open path is %s", processpath);
+    int fd = open(processpath, O_RDWR);
+    LOGD("fd is %d", fd);
+    lseek64(fd, (uintptr_t)lpAddress, SEEK_SET);
+    unsigned char *buffer = (unsigned char *)malloc(size);
+
+    memcpy(buffer, &data, size);
+//    int bread = read(fd, buffer, size);
+    int bread = write(fd, buffer, size);
+    if (bread == -1)
+    {
+        LOGD("WriteProcessMemory fail\n");
+        return -1;
+    }
+    LOGD("WriteProcessMemory result: %d\n", bread);
+    close(fd);
+    return bread;
+}
+
 
 uintptr_t safe_ptrace(int request, pid_t pid, void * addr, void * data)
 {

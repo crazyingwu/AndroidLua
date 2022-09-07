@@ -216,10 +216,20 @@ static int system_close(lua_State *L){
 
 static int system_memoryRead(lua_State *L){
     int pid = lua_tonumber(L, -3); /*获取参数pid*/
-    long address = lua_tonumber(L, -2); /*获取参数address*/
+    unsigned long address = lua_tonumber(L, -2); /*获取参数address*/
     int size = lua_tonumber(L, -1); /*获取参数size*/
-    LOGD("pid=%d, address=%ld, size=%d", pid, address, size);
+    LOGD("pid=%d, address=%lu, size=%d", pid, address, size);
     memory_read(pid, (void *) address, size);
+    return 0;
+}
+
+static int system_memoryWrite(lua_State *L){
+    int pid = lua_tonumber(L, -4); /*获取参数pid*/
+    unsigned long address = lua_tonumber(L, -3); /*获取参数address*/
+    int size = lua_tonumber(L, -2); /*获取参数size*/
+    long data = lua_tonumber(L, -1); /*获取参数data*/
+    LOGD("pid=%d, address=%lu, size=%d, data=%ld", pid, address, size, data);
+    memory_write(pid, (void *) address, size, data);
     return 0;
 }
 
@@ -243,6 +253,7 @@ static const struct luaL_Reg libs[] = {
         {"touchDown",     system_touchDown},
         {"close",         system_close},
         {"memoryRead",    system_memoryRead},
+        {"memoryWrite",    system_memoryWrite},
         {NULL, NULL}  /*the end*/
 };
 
